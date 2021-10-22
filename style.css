@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.nav_css {
+  background-color: #300b58;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  font-family: "Roboto";
+}
+
+.nav_links_css {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  font-family: "Roboto";
+}
+
+.bot_icon_img {
+  height: 35px;
+}
+
+.nav-item > a {
+  color: rgb(203, 227, 251) !important;
+}
+
+.nav-item > a:active {
+  color: #4efafb !important;
+}
+
+#welcome {
+  background-image: url("./Assets/top.png");
+  background-repeat: repeat-x;
+
+  /* height:40%; */
+}
+
+/* Top */
+
+.welcome_buddyBot .header_text {
+  font-size: 70px;
+  color: rgb(79, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.welcome_buddyBot .description_text {
+  font-size: 20px;
+  color: rgb(203, 227, 251);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.welcome_buddyBot .custom_btn {
+  background-color: #4fffff;
+  color: #36065c;
+  width: 145px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.footer_css {
+  background-color: black;
+}
+
+/* why */
+
+.why_buddyBot,
+.importance {
+  background-color: #cbe3fb;
+}
+
+.why_buddyBot .header_text,
+.importance .header_text {
+  font-size: 70px;
+  color: #36065c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.why_buddyBot .description_text,
+.importance .description_text {
+  font-size: 20px;
+  color: rgb(58, 58, 58);
+  line-height: 1.333;
+  text-align: left;
+}
+
+.why_buddyBot .custom_btn,
+.importance .custom_btn {
+  background-color: #36065c;
+  color: #cbe3fb;
+  width: 145px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.group_img {
+  position: relative;
+}
+
+.shape_img {
+  position: absolute;
+  left: 134px;
+  top: 23px;
+}
+
+.margin_top_fix {
+  margin-top: -20%;
+}
+
+/* isolation */
+
+.isolation {
+  background-color: #c2dbf3;
+}
+
+.isolation .header_text {
+  font-size: 70px;
+  color: #36065c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.isolation .description_text,
+.bullying .description_text {
+  font-size: 20px;
+  color: rgb(58, 58, 58);
+  line-height: 1.333;
+  text-align: left;
+}
+
+.isolation .custom_btn,
+.bullying .custom_btn {
+  background-color: #36065c;
+  color: #cbe3fb;
+  width: 145px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+/* bullying */
+
+.custom_div {
+  width: 95%;
+  background-color: #cbe3fb;
+}
+
+.bullying {
+  background-color: #c2dbf3;
+  overflow: hidden;
+}
+
+.bullying .header_text {
+  font-size: 70px;
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.importance_group_img {
+  position: relative;
+}
