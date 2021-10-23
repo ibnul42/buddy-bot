@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Anita  Semi-square Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anita  Semi-square Normal'), url('Anita semi square.woff') format('woff');
+  }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav_css {
@@ -10,26 +19,40 @@
   font-size: 20px;
   line-height: 1.2;
   text-align: left;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
 }
 
 .nav_links_css {
   font-size: 16px;
   line-height: 1.2;
   text-align: left;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
 }
 
 .bot_icon_img {
   height: 35px;
 }
 
-.nav-item > a {
+/* .nav-item > a {
   color: rgb(203, 227, 251) !important;
+} */
+
+/* .nav-item > a:hover {
+  color: #4efafb !important;
+  border: 5px solid black;
+} */
+
+.link_border{
+  width: 10px;
+  height: 10px;
+  background-color: #4fffff;
 }
 
-.nav-item > a:active {
-  color: #4efafb !important;
+.nav-link.active {
+  color: #4fffff !important;
+  border-bottom: 2px solid #4fffff !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #welcome {
@@ -49,19 +72,22 @@
 }
 
 .welcome_buddyBot .description_text {
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 25px;
   color: rgb(203, 227, 251);
   line-height: 1.2;
   text-align: left;
 }
 
 .welcome_buddyBot .custom_btn {
-  background-color: #4fffff;
+  margin-top: 20px;
+  background-color: rgb(79, 255, 255);
   color: #36065c;
   width: 145px;
   border-radius: 50px;
   font-weight: 700;
 }
+
 
 .footer_css {
   background-color: black;
@@ -76,6 +102,7 @@
 
 .why_buddyBot .header_text,
 .importance .header_text {
+  margin-top: 295px !important;
   font-size: 70px;
   color: #36065c;
   line-height: 1.2;
@@ -84,7 +111,8 @@
 
 .why_buddyBot .description_text,
 .importance .description_text {
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 25px;
   color: rgb(58, 58, 58);
   line-height: 1.333;
   text-align: left;
@@ -92,6 +120,7 @@
 
 .why_buddyBot .custom_btn,
 .importance .custom_btn {
+  margin-top: 20px;
   background-color: #36065c;
   color: #cbe3fb;
   width: 145px;
@@ -105,12 +134,22 @@
 
 .shape_img {
   position: absolute;
-  left: 134px;
+  left: 104px;
   top: 23px;
+  width: 71%;
 }
 
 .margin_top_fix {
   margin-top: -20%;
+}
+
+
+.why_buddyBot .img-fluid{
+  max-width: 85% !important;
+}
+
+.why_buddyBot .shape_img{
+  width: 60% !important;
 }
 
 /* isolation */
@@ -120,6 +159,7 @@
 }
 
 .isolation .header_text {
+  margin-top: 270px;
   font-size: 70px;
   color: #36065c;
   line-height: 1.2;
@@ -128,7 +168,8 @@
 
 .isolation .description_text,
 .bullying .description_text {
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 30px;
   color: rgb(58, 58, 58);
   line-height: 1.333;
   text-align: left;
@@ -136,11 +177,16 @@
 
 .isolation .custom_btn,
 .bullying .custom_btn {
+  margin-top: 20px;
   background-color: #36065c;
   color: #cbe3fb;
   width: 145px;
   border-radius: 50px;
   font-weight: 700;
+}
+
+.isolation .img-fluid, .bullying .img-fluid{
+  width: 80%;
 }
 
 /* bullying */
@@ -156,6 +202,7 @@
 }
 
 .bullying .header_text {
+  margin-top: 270px;
   font-size: 70px;
   color: #2c2c2c;
   line-height: 1.2;
@@ -164,6 +211,16 @@
 
 .importance_group_img {
   position: relative;
+  margin-top: -50px;
+
+}
+
+.importance_group_img .img-fluid{
+  max-width: 80% !important;
+}
+
+.importance_group_img .shape_img{
+  left: 36px !important;
 }
 
 /* About */
@@ -245,4 +302,56 @@
 
 .message_box .img-fluid{
   width: 100px !important;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 425px) { 
+  .small_screen_style{
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .header_text{
+    font-size: 45px !important;
+    margin-top: 20px;
+  }
+
+  .description_text{
+    font-size: 18px !important;
+    margin-top: 20px;
+  }
+
+  .why_buddyBot .shape_img{
+    top: 10px;
+    left: 60px;
+  }
+
+  .why_buddyBot .header_text, .isolation .header_text, .bullying .header_text, .importance .header_text{
+    margin-top: 120px !important;
+  }
+
+  .message_box{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .message_box .img-fluid{
+    width: 50px !important;
+  }
+
+  .about_section_small{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_section_small .profile{
+    width: 100%;
+  }
+
+  .profile img{
+    height: 45px !important;
+  }
 }
