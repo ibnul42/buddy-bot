@@ -1,0 +1,192 @@
+.about_buddy_class {
+  background-image: url("../../Assets/top.png");
+  height: 50%;
+}
+
+.isolation_buddy_class,
+.bully_buddy_class {
+  background-color: #b9cde1;
+  height: 50%;
+}
+
+.why_buddy_class, .importance_buddy_class {
+  background-color: #b9cde1;
+  height: 50%;
+}
+
+.header_section_all {
+  display: flex;
+  margin-top: 50px;
+}
+
+.container_text_section {
+  margin-top: 42px;
+  margin-left: 154px;
+}
+
+.container_text_section p {
+  font-size: 65px;
+  font-family: "Roboto";
+  color: rgb(79, 255, 255);
+  line-height: 1.2;
+}
+
+.why_buddy_class .container_text_section p {
+  font-size: 65px;
+  color: rgb(54, 6, 92);
+  line-height: 1.2;
+  font-family: "Roboto";
+}
+
+.isolation_buddy_class .container_text_section p,
+.bully_buddy_class .container_text_section p {
+  font-size: 65px;
+  color: rgb(54, 6, 92);
+  line-height: 1.2;
+  font-family: "Roboto";
+}
+
+.container_image_section img {
+  width: 41%;
+}
+
+.importance_buddy_class div div .importance_image_section_first{
+  width: 39%;
+}
+
+.importance_buddy_class div div .importance_image_section_last{
+  position: absolute !important;
+    width: 29% !important;
+    margin-left: -66px !important;
+    margin-top: 40px !important;
+}
+
+.description_section {
+  background-color: #cbe3fb;
+}
+
+.description_section_text p {
+  font-size: 25px;
+  padding-left: 75px;
+  color: rgb(88, 88, 88);
+  line-height: 1.4;
+}
+
+.whyBuddy_image_section, .importance_image_section {
+  position: relative;
+}
+
+.whyBuddy_image_section_first, .importance_image_section_first {
+  margin-top: 15px !important;
+}
+
+.whyBuddy_image_section_last {
+  position: absolute;
+  width: 31% !important;
+  margin-left: -60px;
+  margin-top: -3px !important;
+}
+
+.importance_image_section_last {
+    position: absolute;
+    width: 38% !important;
+    margin-left: -55px;
+    margin-top: 40px !important;
+  }
+
+.isolation_buddy_class .container .container_text_section,
+.bully_buddy_class .container .container_text_section {
+  margin-top: 115px;
+  margin-left: 175px;
+}
+
+.isolation_buddy_class .container .container_image_section{
+  margin-left: 195px;
+}
+
+.bully_buddy_class .container .container_image_section {
+    margin-left: 195px;
+  }
+
+  .bully_buddy_class .container .container_image_section  img {
+    margin-bottom: 20px;
+  }
+
+  .importance_buddy_class .container .container_text_section p{
+      margin-top: 90px;
+      color:rgb(54, 6, 92);
+  }
+
+/* Media Query */
+@media screen and (max-width: 425px) {
+  .small_screen_display {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .description_section_text p {
+    font-size: 25px !important;
+    margin-top: 8px;
+    padding-left: 18px;
+  }
+
+  .container_text_section {
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+  .container_text_section p {
+    font-size: 45px !important;
+    margin-top: 20px;
+  }
+  .container_image_section img {
+    margin-left: 25%;
+  }
+
+  .whyBuddy_image_section {
+    position: relative;
+  }
+
+  .whyBuddy_image_section_first {
+    margin-top: 15px !important;
+  }
+
+  .whyBuddy_image_section_last {
+    position: absolute;
+    width: 38% !important;
+    margin-left: 15px !important;
+    margin-top: 0px !important;
+  }
+
+  .importance_image_section {
+    position: relative;
+  }
+
+  .importance_image_section_first {
+    margin-top: 15px !important;
+  }
+
+  .importance_image_section_last {
+    position: absolute;
+    width: 38% !important;
+    margin-left: 15px !important;
+    margin-top: 0px !important;
+  }
+  .about_buddy_class .container .container_text_section {
+    margin-top: 10px !important;
+    margin-left: 25px;
+  }
+
+  .isolation_buddy_class .container .container_text_section,
+  .bully_buddy_class .container .container_text_section {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .isolation_buddy_class .container .container_image_section,
+  .bully_buddy_class .container .container_image_section {
+    margin-left: 0;
+  }
+  .importance_buddy_class .container .container_text_section p{
+    margin-top: 20px !important;
+}
+}

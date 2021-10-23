@@ -23,10 +23,14 @@
 }
 
 .nav_links_css {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
   text-align: left;
   /* font-family: "Roboto"; */
+}
+
+.nav_links_css li{
+  margin-right: 10px;
 }
 
 .bot_icon_img {
@@ -56,7 +60,7 @@
 }
 
 #welcome {
-  background-image: url("./Assets/top.png");
+  background-image: url("../../Assets/top.png");
   background-repeat: repeat-x;
 
   /* height:40%; */
@@ -91,6 +95,10 @@
 
 .footer_css {
   background-color: black;
+}
+
+.footer_css .container p{
+  margin-bottom: 0;
 }
 
 /* why */
@@ -169,7 +177,7 @@
 .isolation .description_text,
 .bullying .description_text {
   margin-top: 50px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(58, 58, 58);
   line-height: 1.333;
   text-align: left;
@@ -285,7 +293,7 @@
 
 .profile div img{
   margin-left: 30px;
-  height: 72px;
+  /* height: 72px; */
 }
 
 .profile_links a i{
@@ -296,12 +304,12 @@
 
 .message_box{
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   right: 10px;
 }
 
 .message_box .img-fluid{
-  width: 100px !important;
+  width: 90px !important;
 }
 
 
@@ -312,6 +320,14 @@
     display: flex !important;
     flex-direction: column-reverse;
   }
+  .nav-link.active {
+    color: #4fffff !important;
+    border-bottom: 0 !important;
+  }
+
+  .p-5{
+    padding: 1rem !important;
+  }
 
   .header_text{
     font-size: 45px !important;
@@ -319,7 +335,7 @@
   }
 
   .description_text{
-    font-size: 18px !important;
+    font-size: 20px !important;
     margin-top: 20px;
   }
 
